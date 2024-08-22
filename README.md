@@ -2,6 +2,20 @@
 
 This project is a backend service developed as part of the MDandMe take-home assignment. It uses `json-server` to provide a simple REST API for the frontend application.
 
+## Note for Reviewers
+
+The `data.json` file has been modified from its original format to be compatible with `json-server`. Specifically, `data.json` was changed from an array format to an object format. The contents of the original array have been encapsulated within a property `posts` of the new object. For example:
+
+```json
+{
+  "posts": [
+    // The original data here
+  ]
+}
+```
+
+This modification allows `json-server` to correctly interpret and serve the data.
+
 ## Prerequisites
 
 Before you start, make sure you have the following tools installed:
